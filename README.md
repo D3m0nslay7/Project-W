@@ -7,6 +7,6 @@ I am trying to create a website linked to a database that will showcase my proje
 I want to update using Laravel framework to make a more maintainable and robust system rather then using standalone php.
 
 # Information
-Created using Netbeans and then VSCode
-Going through a re-structuring
-Moving to Laravel Framework
+  - Created using Netbeans and then VSCode
+  - Going through a re-structuring
+  - Moving to Laravel Framework
