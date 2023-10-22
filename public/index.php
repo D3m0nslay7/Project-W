@@ -55,3 +55,5 @@ $response = $kernel->handle(
 $kernel->terminate($request, $response);
 
 ECHo "test";
+
+echo "Another test";
