@@ -57,3 +57,14 @@ $kernel->terminate($request, $response);
 ECHo "test";
 
 echo "Another test";
+
+
+ECHo "test";
+
+echo "Another test";ECHo "test";
+
+echo "Another test";ECHo "test";
+
+echo "Another test";ECHo "test";
+
+echo "Another test";
