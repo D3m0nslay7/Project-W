@@ -1,6 +1,5 @@
-<!DOCTYPE html> <html lang="{{ str_replace('_', '-', app()->getLocale()) }}"> <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html> <html lang="{{ str_replace('_', '-', app()->getLocale()) }}"> <head> <meta charset="utf-8"> <meta
+    name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Laravel</title>
 
@@ -394,9 +393,14 @@
 
             <h1> ToDo List </h1>
 
-            <label for="ItemList">New Todo Item</label></br>
-            <input type="text" name="ItemList"></br>
-            <button>Save Item</button>
+            <form method="post" action="{{ route('saveItem')} }" accept-charset="UTF-8">
+                {{ csrf_field() }}
+
+                <label for="ItemList">New Todo Item</label></br>
+                <input type="text" name="ItemList"></br>
+                <button type="submit">Save Item</button>
+
+            </form>
         </div>
     </div>
 </body>
