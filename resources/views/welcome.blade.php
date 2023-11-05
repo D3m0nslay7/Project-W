@@ -395,7 +395,7 @@
             <h1> ToDo List </h1>
 
             <label for="ItemList">New Todo Item</label></br>
-            <input type="text" name="ItemList">
+            <input type="text" name="ItemList"></br>
             <button>Save Item</button>
         </div>
     </div>
