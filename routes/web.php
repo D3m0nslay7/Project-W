@@ -20,4 +20,4 @@ Route::get('/', function () {
 Route::post('/saveItemRoute', function () {
     return view('');
 
-}->('saveItem');
+})-> name('saveItem');
