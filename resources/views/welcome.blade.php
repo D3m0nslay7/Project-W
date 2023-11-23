@@ -393,7 +393,7 @@
 
             <h1> ToDo List </h1>
 
-            <form method="post" action="{{ route('saveItem')} }" accept-charset="UTF-8">
+            <form method="post" action="{{ route('saveItem') }}" accept-charset="UTF-8">
                 {{ csrf_field() }}
 
                 <label for="ItemList">New Todo Item</label></br>
