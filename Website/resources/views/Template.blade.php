@@ -10,6 +10,7 @@
     </p>
 @endsection
 
+
 @section('js')
     <script src="{{ asset('assets/js/home.js') }}"></script>
 @endsection

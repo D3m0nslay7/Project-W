@@ -21,7 +21,7 @@
     <script src="https://kit.fontawesome.com/c5cd4f3e40.js" crossorigin="anonymous"></script>
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <!-- Any extra styles for indivdual pages -->
     @yield('style')
 
@@ -29,22 +29,33 @@
 
 <body class="antialiased">
 
+    @include('components/navbar')
+
     <main>
-        <!-- include('layouts.alert') !-->
-        @yield('content')
 
+        <!-- Content that is to be layed out in a banner style and that will ignore the normal content layout -->
+        <div id="bannercontent">
 
+            @yield('bannercontent')
+        </div>
+
+        <!-- Content that is to be layed out to fit screensize and we want responsiveness beyond anything else -->
+        <div class="container" id="maincontent">
+
+            @yield('maincontent')
+        </div>
     </main>
+
+
+    @include('components/footer')
 
     <!-- bootstrap 5.3 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <!-- Main Javascript -->
-    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
     <!-- Any additonal javascript needed for the page -->
     @yield('js')
 

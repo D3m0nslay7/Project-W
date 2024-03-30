@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
+:root {
+    /*
+    Naming:
+    First the class or id it belongs to. ex body
+    next what area it targets. ex background (can be as many as needed. ex active-text)
+    then lastly the attributes name. ex color
+    */
+    --main-background-color: #ffff;
+    --main-text-color: #fff;
+
+    --nav-background-color: #00274ddc;
+    --nav-offcanvas-background-color: #001931f8;
+    --nav-text-color: #FFFFFF;
+    --nav-active-text-color: #ffffff;
+
+    --footer-background-color: #00264d;
+
+    --links-text-color: #ffffff;
+
+    --spotlight-color-1: #ebebeb;
+
+    --normal-background-color: #fff;
+    --discount-background-color: #c5ffd172;
+    --hot-background-color: #ff800031;
+
+    --main-content-background-color: #f8f9fa;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    overflow-x: hidden;
+
+}
+
+main {
+    min-height: 100vh;
+}
+
+main #maincontent {
+    min-height: 100vh;
+    background-color: var(--main-content-background-color);
+    box-shadow: 0px 0px 2px 1px rgba(0, 38, 77, 0.1);
+    /* Increase spread radius */
+    /* Use primary color as shadow color */
+}
+
+main #maincontent section {
+    padding-bottom: 5vh;
+
+}
+
+/* #region Navigation */
+
+
+#navbar {
+    background: linear-gradient(90deg, var(--nav-background-color) 0%, var(--nav-background-color) 80%, rgba(0, 212, 255, 0) 100%), url('../images/styling/navbar-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#navbar .nav-item .nav-link {
+    color: var(--nav-text-color);
+}
+
+#navbar #offcanvasNavbar .offcanvas-title {
+    color: var(--nav-text-color);
+}
+
+#navbar #offcanvasNavbar .btn-close {
+    color: white !important;
+    /* Change to the desired color */
+}
+
+#navbar .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#navbar #offcanvasNavbar {
+    background: linear-gradient(180deg, var(--nav-offcanvas-background-color) 0%, var(--nav-offcanvas-background-color) 50%, rgba(0, 0, 0, 0.8) 100%), url('../images/styling/navbar-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* #endregion */
+
+/* #region Footer */
+
+
+/* #endregion */
