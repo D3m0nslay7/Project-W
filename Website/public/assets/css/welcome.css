@@ -1,0 +1,25 @@
+.intro {
+    padding-top: 4%;
+    font-family: "Platypi", sans-serif;
+    color: #003366;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 2rem;
+        /* Adjust the font size for mobile devices */
+    }
+}
+
+#rounded-image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+
+}

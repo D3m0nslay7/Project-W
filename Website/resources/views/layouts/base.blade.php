@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="WoodLess">
+    <meta name="description" content="Portfolio website for Umer Mohammed">
     <meta name="author" content="Umer Mohammed">
     <meta name="keywords" content="Portfolio Project, Cybersecurity">
 
